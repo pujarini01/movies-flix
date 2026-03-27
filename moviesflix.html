@@ -1,33 +1,34 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
- 
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LN9YDV2DWB"></script>
+ <!-- ✅ Google Analytics (ONLY ONE) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LN9YDV2DWB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LN9YDV2DWB');
+
+    /* Event tracking helper */
+    function trackEvent(eventName, params = {}) {
+      gtag('event', eventName, params);
+      logToConsole(eventName, params);
+    }
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoviesFllix — Stream Everything</title>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BZ5RK704Z1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-LN9YDV2DWB');
+  gtag('config', 'G-BZ5RK704Z1');
 </script>
- </head>
-
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MoviesFllix — Stream Everything</title>
-
-  <!-- Google Analytics 4 -->
-  <!-- REPLACE G-XXXXXXXXXX with your actual GA4 Measurement ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX', {
-      send_page_view: true,
-      user_properties: { site_version: 'v1.0', theme: 'dark' }
-    });
 
     /* ── GA4 Event Helper ── */
     function trackEvent(eventName, params = {}) {
